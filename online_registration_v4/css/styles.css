@@ -153,7 +153,7 @@ fieldset {
     width: 25%;
   }
   .t-input {
-    display: inline-block;
+    display: flex;
     width: 75%;
   }
 .line-break2 {
