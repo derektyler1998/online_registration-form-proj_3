@@ -8,6 +8,9 @@ header {
   text-align: center;
   padding: 20px;
 }
+body {
+  margin: 0;
+}
 .name {
   font-weight: 400;
   font-size: 25px;
@@ -80,7 +83,8 @@ input:focus {
 }
 .bottom-form input {
   width: 5%;
-  display: block;
+  display: flex;
+  margin-top: 14px;
 }
 .bottom-form label {
   margin-left: 10px;
@@ -118,8 +122,45 @@ button {
   font-style: italic;
   padding-bottom: 35%;
 }
-.li-label {
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 15px;
+.box {
+  display: flex;
+  flex-direction: row;
+}
+fieldset {
+  border: none;
+  width: 100%;
+}
+
+/* Media Query */
+@media screen and (min-width: 768px) {
+
+  #zip {
+
+    width: 25%;
   }
+
+  .top-form {
+     display: flex;
+     flex-flow: row;
+     justify-content:flex-start;
+     align-items: center;
+     width: 100%;
+     margin-top: 17px;
+     margin-bottom: 17px;
+  }
+  .t-label {
+    display: flex;
+    width: 25%;
+  }
+  .t-input {
+    display: inline-block;
+    width: 75%;
+  }
+.line-break2 {
+  padding-top: 30px;
+    border-bottom: 3px solid black;
+    margin-bottom: 40px;
+}
+}
+
+}
