@@ -34,6 +34,15 @@ h1 {
   text-align: center;
   padding-bottom: 20px;
 }
+ legend {
+  text-align: left;
+  color: #101736;
+  font-weight: 700;
+  margin-top: 12px;
+
+  font-size: 23px;
+
+}
 .intro h2 {
   text-align: center;
   color: #101736;
@@ -41,12 +50,7 @@ h1 {
   font-size: 21px;
   margin-top: 12px;
 }
-.contact-info h2 {
-  color: #101736;
-  font-weight: 700;
-  font-size: 23px;
 
-}
 .contact-info label {
   display: block;
   margin-bottom: 7px;
@@ -70,7 +74,7 @@ input:focus {
   text-align: left;
   border: solid 1.5px #383c4d;
 }
-.state {
+#state {
   width: 100%;
   max-width: 100%;
 }
@@ -135,7 +139,7 @@ fieldset {
 @media screen and (min-width: 768px) {
 
   #zip {
-
+    display: flex;
     width: 25%;
   }
 
@@ -161,6 +165,7 @@ fieldset {
     border-bottom: 3px solid black;
     margin-bottom: 40px;
 }
-}
+
+
 
 }
