@@ -28,10 +28,12 @@
 
     <div class="line-break1"></div>
 
-    <fieldset>
-      <div class="contact-info">
-      <h2>Contact Information</h2>
-      <form>
+    <div class="contact-info">
+
+     <form>
+
+      <fieldset>
+        <legend>Contact Information</legend>
           <div class="top-form">
           <label for="name" class="t-label">Full Name</label>
           <input type="text" id="name" name="user_name" class="t-input" placeholder="Required" required>
@@ -46,7 +48,7 @@
 
         <div class="top-form">
           <label for="phone" class="t-label">Phone Number</label>
-          <input type="telephone" id="phone" name="user_phone" class="t-input">
+          <input type="tel" id="phone" name="user_phone" class="t-input">
         </div>
 
           <div class="top-form">
@@ -61,7 +63,7 @@
 
           <div class="top-form">
           <label for="state" class="t-label">State</label>
-          <select class="state" id="state" name="user_state" class="t-input">
+          <select id="state" name="user_state" class="t-input">
             <option value="state">Choose State</option>
             <option value="AL">Alabama</option>
             <option value="AL">Alabama</option>
@@ -118,17 +120,22 @@
             </select>
           </div>
 
-            <div class="top-form">
+
+          <div class="top-form">
           <label for="zip" class="t-label">Zip Code</label>
-          <input class="zip" type="number" id="zip" name="user_zip" class="t-input">
+          <input type="text" id="zip" name="user_zip" class="t-input">
         </div>
-        </div>
+
+        </fieldset
 
         <div class="line-break2"></div>
 
-            <div class="bottom-form">
-            <h2>Newsletter</h2>
+        <div class="bottom-form">
+
+        <fieldset>
+            <legend>Newsletter</legend>
             <p class="newsletter">Select the newsletters you would like to receive</p>
+        </fieldset>
 
           <div class="box">
             <input type="checkbox" name="html" value="news" checked>
@@ -149,12 +156,12 @@
             <p class="newsletter">Newsletter format</p>
 
             <div class="box">
-            <input type="radio"  name="format" value="html" checked>
+            <input type="radio" id="html" name="format" value="html" checked>
             <label for="html">HTML</label><br>
           </div>
 
           <div class="box">
-            <input type="radio"  name="format" value="plain_text">
+            <input type="radio" id="plain" name="format" value="plain_text">
             <label for="plain">Plain text</label>
           </div>
             <section class="text-area">
@@ -163,10 +170,9 @@
             </section>
             <button type="submit">Sign Up</button>
             <p class="copyright">Copyright The Code Review</p>
-
+          </div>
         </form>
 
       </div>
-    </div>
     </body>
     </html>
