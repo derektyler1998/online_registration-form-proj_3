@@ -139,7 +139,7 @@ fieldset {
 /* Media Query */
 @media screen and (min-width: 768px) {
 
-  #zip {
+ #zip {
     display: flex;
     width: 25%;
   }
@@ -155,7 +155,7 @@ fieldset {
   }
   .t-label {
     display: flex;
-    width: 25%;
+    flex-basis: 25%;
   }
   .t-input {
     display: flex;
@@ -166,7 +166,11 @@ fieldset {
     border-bottom: 3px solid black;
     margin-bottom: 40px;
 }
-
+.t-input:not(#zip) {
+  display: flex;
+  flex: 1 75%;
+}
 
 
 }
+
