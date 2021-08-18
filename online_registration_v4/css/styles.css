@@ -52,7 +52,7 @@ h1 {
 }
 
 .contact-info label {
-  display: block;
+  display: flex;
   margin-bottom: 7px;
   margin-top: 10px;
   margin-right: 5px;
