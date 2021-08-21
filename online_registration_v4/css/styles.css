@@ -19,6 +19,20 @@ body {
 h1 {
   color: white;
 }
+.t-label:focus,
+#zip:focus,
+#state:focus,
+#text-area:focus {
+  outline: 2px solid #383c4d;
+  transition: 0.1s;
+  background-color: lightgray;
+  opacity: 0.9;
+
+}
+
+
+
+
 .container {
   padding: 5%;
 }
@@ -173,4 +187,3 @@ fieldset {
 
 
 }
-
